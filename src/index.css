@@ -1,0 +1,48 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header {
+  background-image: url("./assets/img/Header.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+h1,
+h3,
+h4,
+header h5,
+footer p {
+  color: white;
+}
+nav {
+  background-color: rgb(41, 41, 41);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+nav button {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  margin-inline: 2px;
+}
+nav h4{margin-inline-end: 20px;}
+.totalCompra{margin-left: auto;}
+.container{display: flex; justify-content: center; margin-block-start: 20px;}
+.boton2{color: white; background-color: black;}
+.boton1, .boton2{text-decoration: none; border: solid black 2px; padding: 5px; padding-inline: 10px;}
+footer {
+  background-color: rgb(41, 41, 41);
+  text-align: center;
+}
+
