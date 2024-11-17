@@ -8,7 +8,7 @@ const CardPizza = ({ name, desc, img, ingredients, price }) => {
       <h5 className="card-title">{name}</h5>
       <p className="card-text">{desc}</p>
       <ul className="list-group list-group-flush">
-      🍕{ingredients.map((ingredient, index) => (
+      🍕Ingredientes: {ingredients.map((ingredient, index) => (
           <li key={index} className="list-group-item">{ingredient}</li>
         ))}
       </ul>
