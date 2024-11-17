@@ -2,16 +2,20 @@ import PropTypes from "prop-types";
 
 const CardPizza = ({ name, desc, img, ingredients, price }) => {
   return (
-    <div className="cardPizza">
-      <img src={img} alt={name} />
-      <h2>{name}</h2>
-      <p>{desc}</p>
-      <ul>
+    <div className="card m-3" style={{width:"18rem"}}>
+      <img src={img} className="card-img-top" alt={name} />
+      <div className="card-body">
+      <h5 className="card-title">{name}</h5>
+      <p className="card-text">{desc}</p>
+      <ul className="list-group list-group-flush">
         {ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
+          <li key={index} className="list-group-item">{ingredient}</li>
         ))}
       </ul>
-      <p>Precio: ${price}</p>
+      <p className="mt-3 fw-bold">Precio: ${price}</p>
+      <a href="#" className="btn btn-light">Ver más</a>
+      <a href="#" className="btn btn-dark">Añadir</a>
+      </div>
     </div>
   );
 };
